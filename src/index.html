@@ -4,10 +4,187 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./output.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <title>Portfolio</title>
 </head>
-<body>
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
+
+
+<body class="bg-[url('/assets/images/background-images.jpg')] bg-cover bg-center min-h-screen m-0">
+<a id="top"></a>
+
+<!-- Header -->
+<header class="top-0 z-50">
+  <div class="max-w-8xl mx-auto flex gap-4 py-4 px-8 items-center">
+    <img src="/assets/icons/logo.png" alt="Logotyp" class="h-12">
+   
+    <!-- Menu -->
+    <nav class="lg:block ml-auto">
+      <ul class="flex gap-8 font-bold text-sm">
+        <li><a href="#top" class="hover:text-[var(--color-blue)] underline decoration-2">HEM</a></li>
+        <li><a href="#om-mig" class="hover:text-[var(--color-blue)]">OM MIG</a></li>
+        <li><a href="#projekt" class="hover:text-[var(--color-blue)]">PROJEKT</a></li>
+        <li><a href="mailto:alvaz@gmail.com" class="hover:text-[var(--color-blue)]">KONTAKTA MIG!</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- Site header -->
+<section class="relative mb-20">
+  <img src="/assets/images/background-image2.jpg" alt="" class="w-full h-[80vh] object-cover">
+  <div class="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
+    <h2 class="text-white text-md font-regular">ALVA ZETTERBLOM</h2>
+    <h1 class="text-white text-7xl font-semibold tracking-[1rem] mt-2">PORTFOLIO</h1>
+    <a href="#projekt" class="mt-2 px-6 py-3 bg-[var(--color-brown)] text-white hover:scale-105 transition hover:shadow-lg inline-block">
+      SE MINA PROJEKT
+    </a>
+  </div>     
+</section>
+
+<!-- Main Content -->
+<section id="om-mig" class="px-6 py-20 mb-20">
+  <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-start gap-12 relative shadow-2xl  p-6 md:p-12 bg-white/30 backdrop-blur-md">
+  
+    <img src="/assets/icons/blue-forms.png" alt="" class="absolute top-0 left-0 w-64 h-64 z-0 pointers-events-none">
+    <img src="/assets/icons/bue-forms.png" alt="" class="absolute bottom-0 right-0 w-64 h-64 z-0">
+
+    <div class="w-1/2 pr-8 z-10">
+      <img src="/assets/images/porträtt.jpg" alt="Porträtt" class="w-full h-auto rounded-xl shadow-2xl">
+    </div>
+
+    <div class="w-1/2 pl-8 z-10">
+      <h2 class="text-4xl font-bold mb-6">OM MIG</h2>
+      <p class="text-lg leading-relaxed mb-6">
+        Jag gillar att skapa lösningar där design och funktion samspelar på ett genomtänkt sätt. 
+        För mig handlar bra design inte bara om det visuella – utan lika mycket om hur det fungerar 
+        och känns att använda. Jag strävar efter att skapa en så funktionell hemsida som möjligt 
+        som både ser bra ut för ögat men även fyller sitt syfte!
+      </p>
+      <button onclick="window.location.href='mailto:alvaz@gmail.com'" class="mt-8 px-10 py-4 bg-[var(--color-brown)] text-white hover:scale-105 transition hover:shadow-xl">
+        KONTAKTA MIG!
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- What i offer -->
+<section id="vad-erbjuder-jag" class="py-20 mb-40">
+  <h2 class="text-4xl font-extrabold text-center mb-16">VAD ERBJUDER JAG?</h2>
+  <div class="flex flex-wrap justify-center gap-20 max-w-7xl mx-auto">
+   
+    <!-- Box 1 -->
+    <div class="bg-[var(--color-beige)] p-8 shadow-2xl w-80 h-96 text-center flex flex-col items-center transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+      <div class="mb-4">
+        <img src="/assets/icons/grafisk-design.png" alt="" class="mx-auto w-10 h-10">
+      </div>
+      <h3 class="font-bold text-2xl mb-2">GRAFISK DESIGN</h3>
+      <p class="text-sm mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur, mollitia? Eum voluptates accusantium voluptas et quia atque deserunt aliquid. Esse similique qui dolore perspiciatis adipisci corrupti, voluptates dignissimos facilis consectetur?</p>
+      <button class="bg-[var(--color-blue)] text-white px-4 py-2 text-sm font-bold mt-auto hover:scale-105 transition hover:shadow-xl">LÄS MER</button>
+    </div>
+
+    <!-- Box 2 -->
+    <div class="bg-[var(--color-beige)] p-8 shadow-2xl w-80 h-96 text-center flex flex-col items-center transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+      <div class="mb-4">
+        <img src="/assets/icons/webbutveckling.png" alt="" class="mx-auto w-10 h-10">
+      </div>
+      <h3 class="font-bold text-2xl mb-2">WEBBUTVECKLING</h3>
+      <p class="text-sm mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur, mollitia? Eum voluptates accusantium voluptas et quia atque deserunt aliquid. Esse similique qui dolore perspiciatis adipisci corrupti, voluptates dignissimos facilis consectetur?</p>
+      <button class="bg-[var(--color-blue)] text-white px-4 py-2 text-sm font-bold mt-auto hover:scale-105 transition hover:shadow-xl">LÄS MER</button>
+    </div>
+
+    <!-- Box 3 -->
+    <div class="bg-[var(--color-beige)] p-8 shadow-2xl w-80 h-96 text-center flex flex-col items-center transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+      <div class="mb-4">
+        <img src="/assets/icons/marknadsföring.png" alt="" class="mx-auto w-10 h-10">
+      </div>
+      <h3 class="font-bold text-2xl mb-2">MARKNADSFÖRING</h3>
+      <p class="text-sm mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur, mollitia? Eum voluptates accusantium voluptas et quia atque deserunt aliquid. Esse similique qui dolore perspiciatis adipisci corrupti, voluptates dignissimos facilis consectetur?</p>
+      <button class="bg-[var(--color-blue)] text-white px-4 py-2 text-sm font-bold mt-auto hover:scale-105 transition hover:shadow-xl">LÄS MER</button>
+    </div>
+  </div>
+</section>
+
+
+<!-- Slider -->
+<section id="projekt" class="bg-[var(--color-brown)] py-24 mb-40">
+    <h2 class="text-4xl font-extrabold text-center mb-20">WEBBPROJEKT</h2>
+  
+    <div class="swiper mySwiper max-w-6xl mx-auto relative">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="/assets/images/webbshop.jpg" class="rounded-xl shadow-lg" alt="Slide 1" />
+        </div>
+        <div class="swiper-slide">
+          <img src="/assets/images/webbshop.jpg" class="rounded-xl shadow-lg" alt="Slide 2" />
+        </div>
+        <div class="swiper-slide">
+          <img src="/assets/images/webbshop.jpg" class="rounded-xl shadow-lg" alt="Slide 3" />
+        </div>
+      </div>
+  
+      
+      <div class="swiper-button-prev flex items-center justify-center w-12 h-12  rounded-full backdrop-blur-sm absolute top-1/2 -translate-y-1/2 left-2 z-10">
+      
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+        </svg>
+      </div>
+  
+      <div class="swiper-button-next flex items-center justify-center w-12 h-12 rounded-full backdrop-blur-sm absolute top-1/2 -translate-y-1/2 right-2 z-10">
+       
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".mySwiper", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      loop: true,
+      coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 200,
+        modifier: 1.5,
+        slideShadows: false,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+
+<!-- Footer -->
+<footer class="bg-[var(--color-beige)] px-6 py-10">
+  <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between gap-12">
+    <div>
+      <h3 class="text-2xl font-bold mb-4 mt-2 border-b-2 border-[var(--color-blue)] inline-block pb-1">QUICKLINKS</h3>
+      <ul class="space-y-2 font-semibold text-sm">
+        <li><a href="#top" class="hover:text-[var(--color-blue)]">HEM</a></li>
+        <li><a href="#projekt" class="hover:text-[var(--color-blue)]">PROJEKT</a></li>
+        <li><a href="#vad-erbjuder-jag" class="hover:text-[var(--color-blue)]">TJÄNSTER</a></li>
+        <li><a href="mailto:alvaz@gmail.com" class="hover:text-[var(--color-blue)]">KONTAKT</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-2xl font-bold mb-4 mt-2 border-b-2 border-[var(--color-blue)] inline-block pb-1">KONTAKT</h3>
+      <p class="text-sm"><strong>Email:</strong> alvaz@gmail.com</p>
+      <p class="text-sm"><strong>Telefon:</strong> 0732612608</p>
+      <p class="text-sm"><strong>Adress:</strong> Sörmlandsgatan 18,<br>64136 Katrineholm</p>
+    </div>
+  </div>
+  <div class="text-center text-xs mt-12 text-gray-600">
+    &copy; 2025 Alva Zetterblom. All rights reserved.
+  </div>
+</footer>
+
 </body>
 </html>

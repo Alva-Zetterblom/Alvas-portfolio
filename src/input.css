@@ -1,1 +1,33 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+
 @import "tailwindcss";
+
+@layer base {
+    :root {
+      --color-blue: #067797;
+      --color-beige: #F2DECA;
+      --color-brown: #987A6A;
+    }
+  
+    /* Lägg till fonten för rubriker */
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Josefin Sans', serif;
+      
+    }
+  
+    /* Lägg till fonten som font-serif globalt */
+    body {
+      @apply font-serif;
+      font-family: 'Josefin Sans', serif;
+     
+    }
+
+    html {
+        scroll-behavior: smooth;
+      }
+      
+  }
+
+  
+  
