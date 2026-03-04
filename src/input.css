@@ -6,22 +6,25 @@
 
 @layer base {
     :root {
-      --color-blue: #067797;
-      --color-beige: #F2DECA;
-      --color-brown: #987A6A;
-      --color-marine: #002F9A;
+      --color-pink: #D65C84;
+      --color-brown: #59382C;
+      --color-blue: #BFDCF9;
+      --color-beige: #FAF0E6;
+      --color-blueb: #BAD6EB;
+      --color-marine: #081F6C;
+      --color-milk: #F0E7D5;
 
     }
   
     /* Lägg till fonten för rubriker */
-    h1, h2 {
+    h1, h2, h3, a {
       font-family: 'Josefin Sans', serif;
       font-family: 'Sergio Trendy', sans-serif;
       
     }
   
     /* Lägg till fonten som font-serif globalt */
-    body {
+    body,p {
       @apply font-serif;
       font-family: 'Josefin Sans', serif;
       
